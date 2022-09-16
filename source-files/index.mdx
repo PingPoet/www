@@ -5,33 +5,59 @@ x-title: YEAH BABY!
 
 import Card from "./components/card.jsx"
 
-Ping Poet Products is a consulting firm that specializes in **Product Management** and **Software Development** to take cloud-based products from idea to delivery to customers.
+<div className="col-lg-8 mx-auto p-4 py-md-5">
+  <header className="d-flex align-items-center pb-3 mb-5 border-bottom">
+    <a
+      href="/"
+      className="d-flex align-items-center text-dark text-decoration-none"
+    >
+      <img src="/images/quill_pen_feather-rose.svg" width="40" height="32" className="me-2" />
+      
+      <h1 className="fs-4">Ping Poet Products</h1>
+    </a>
+  </header>
 
-<Card heading="What we do">
-  Want a new SaaS/Cloud product? We can help help you define and develop your
-  product or feature from idea, to customer validation, to the development and
-  launch of the product.
-</Card>
+  <main>
+    <p className="fs-5 col-md-8 mb-5">Consulting that specializes in the **Product Management** and **Software Development** to take cloud-based products from idea to delivery to customers.</p>
 
-<Card heading="Define">
-  We work with prospects, customers, and executives to capture a vision for a
-  new product or feature.
-</Card>
+    <hr className="col-3 col-md-2 mb-5" />
 
-<Card heading="Validate">
-  We work with stakeholders to validate the vision internally, and then with
-  customers or prospects using carefully crafted surveys and interviews to
-  ensure that the right product is built.
-</Card>
+    <div className="row g-5">
 
-<Card heading="Develop">
-  We are passionate Software Developers and ensure that the product is built
-  right.
-</Card>
+      <Card heading="What we do">
+        Want a new SaaS/Cloud product? We can help help you define and develop your
+        product or feature from idea, to customer validation, to the development and
+        launch of the product.
+      </Card>
 
-<Card heading="Maintain">
-  We ensure that your cloud application continues to work smoothly with minimal
-  opertional load as you add customers. From being on-call, to upgrades, to
-  deployments, we help you maximize uptime and minimize your teams' time
-  operations.
-</Card>
+      <Card heading="Define">
+        We work with prospects, customers, and executives to capture a vision for a
+        new product or feature.
+      </Card>
+
+      <Card heading="Validate">
+        We work with stakeholders to validate the vision internally, and then with
+        customers or prospects using carefully crafted surveys and interviews to
+        ensure that the right product is built.
+      </Card>
+
+      <Card heading="Develop">
+        We are passionate Software Developers and ensure that the product is built
+        right.
+      </Card>
+
+      <Card heading="Maintain">
+        We ensure that your cloud application continues to work smoothly with minimal
+        opertional load as you add customers. From being on-call, to upgrades, to
+        deployments, we help you maximize uptime and minimize your teams' time
+        operations.
+      </Card>
+
+    </div>
+
+  </main>
+
+  <footer className="pt-5 my-5 text-muted border-top">
+    Ping Poet Products, LLC. &middot; &copy; 2022
+  </footer>
+</div>

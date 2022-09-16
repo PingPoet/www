@@ -7,9 +7,11 @@
     "build:11ty": "npx @11ty/eleventy",
     "build:css": "parcel build --dist-dir _site/style source-files/style/style.scss",
     "build:js": "parcel build --dist-dir _site/js source-files/js/main.js",
+    "build:images": "parcel build --dist-dir _site/images source-files/images/**/*",
     "start": "npm run clean; run-p watch:*",
     "watch:css": "parcel watch --dist-dir _site/style source-files/style/style.scss",
     "watch:js": "parcel watch --dist-dir _site/js source-files/js/main.js",
+    "watch:images": "parcel watch --dist-dir _site/images source-files/images/**/*",
     "watch:11ty": "npx @11ty/eleventy --serve"
   },
   "license": "ISC",
