@@ -4,8 +4,9 @@ This is the source for the https://www.pingpoet.com website for Ping Poet Produc
 
 ## Todo
 
-- [ ] Style with bootstrap
-- [ ] Bundle with parcel like https://github.com/twbs/examples/tree/main/parcel
+- [x] Style with bootstrap
+- [x] Bundle with parcel like https://github.com/twbs/examples/tree/main/parcel
+  Hmm? https://hiltonmeyer.com/articles/11ty-with-parcel.html
 - [ ] Publish via github pages with https://github.com/actions/deploy-pages
 - [ ] proxy with cloudflare
 - [ ] Edit on github
