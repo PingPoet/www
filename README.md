@@ -10,10 +10,10 @@ This is the source for the https://www.pingpoet.com website for Ping Poet Produc
 - [x] fix(home): make home only have "What we do" and "how we do it" and link those to two detailed feature pages
 - [x] chore: Publish via github pages with https://github.com/actions/deploy-pages
 - [x] fix: render markdown on features layout page (how-we-do-it has an example of failed render)
+- [x] fix: add a "See something wrong?, [propose an edit]"
 - [ ] fix: add working contact form
 - [ ] fix: add comments to pages
 - [ ] chore: proxy with cloudflare for perf
-- [ ] fix: add a "See something wrong?, [propose an edit]"
 - [ ] SEO og/twitter semantic tags like twenty-nine
 - [ ] "Selected Articles" based on blog from eleventy-base-blog
 - [ ] analytics from https://www.cloudflare.com/web-analytics/, https://plausible.io/ or https://matomo.org/

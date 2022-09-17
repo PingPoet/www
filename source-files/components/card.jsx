@@ -1,5 +1,5 @@
 import React from "react"
-import { Remark, useRemarkSync} from "react-remark"
+import { useRemarkSync} from "react-remark"
 
 const Card = ({ heading, headingMarkdown, children, childrenMarkdown }) => {
   heading = headingMarkdown ? useRemarkSync(headingMarkdown) : heading;
