@@ -9,7 +9,7 @@ This is the source for the https://www.pingpoet.com website for Ping Poet Produc
   Hmm? https://hiltonmeyer.com/articles/11ty-with-parcel.html
 - [x] fix(home): make home only have "What we do" and "how we do it" and link those to two detailed feature pages
 - [x] chore: Publish via github pages with https://github.com/actions/deploy-pages
-- [ ] fix: render markdown on features layout page (how-we-do-it has an example of failed render)
+- [x] fix: render markdown on features layout page (how-we-do-it has an example of failed render)
 - [ ] fix: add working contact form
 - [ ] fix: add comments to pages
 - [ ] chore: proxy with cloudflare for perf
@@ -23,6 +23,7 @@ This is the source for the https://www.pingpoet.com website for Ping Poet Produc
 - [ ] terms
 - [ ] cookie warning
 - [ ] fix: optimize parcel bundling of css based on what's used in generated output
+- [ ] chore: prevent npm start from leaving some processes running due to run-p
 
 ## Inspiration and Gratitude
 

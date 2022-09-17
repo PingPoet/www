@@ -23,7 +23,7 @@ export const Features = ({ features }) => {
         <hr className="col-3 col-md-2 mb-5" />
     <div className="row g-5">
       {others.map((feature) => (
-        <Card heading={feature.title} key={feature.title}>{feature.description}</Card>
+        <Card headingMarkdown={feature.title} key={feature.title} childrenMarkdown={feature.description} />
       ))}
     </div>
 
