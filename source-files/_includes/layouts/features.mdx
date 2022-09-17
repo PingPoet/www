@@ -7,6 +7,7 @@ import HtmlHead from "./htmlHead.jsx"
 import SiteHeader from "./siteHeader.jsx"
 import SiteFooter from "./siteFooter.jsx"
 import Card from "../../components/card.jsx"
+import { useRemarkSync} from "react-remark"
 
 export const Features = ({ features }) => {
   /* we showcase the first featuer, and just loop through the rest as cards */
@@ -14,11 +15,13 @@ export const Features = ({ features }) => {
     features && features.length > 0
       ? features[0]
       : { title: "", description: "" }
+  const showcasedTitle = useRemarkSync(showcased.title)
+  const showcasedDescription = useRemarkSync(showcased.description)
   const others =
     features && features.length > 0 ? features.slice(1) : []
   return (<>
-    <h1>{showcased.title}</h1>
-        <p className="fs-5 col-md-8 mb-5">{showcased.description}</p>
+    <h1>{useRemarkSync(showcased.title)}</h1>
+        <p className="fs-5 col-md-8 mb-5">{useRemarkSync(showcased.description)}</p>
 
         <hr className="col-3 col-md-2 mb-5" />
     <div className="row g-5">
@@ -45,7 +48,7 @@ export const Features = ({ features }) => {
 
       </main>
 
-      <SiteFooter />
+      <SiteFooter {...props} />
 
     </div>
 
