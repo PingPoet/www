@@ -4,19 +4,24 @@ This is the source for the https://www.pingpoet.com website for Ping Poet Produc
 
 ## Todo
 
-- [x] Style with bootstrap
-- [x] Bundle with parcel like https://github.com/twbs/examples/tree/main/parcel
+- [+] Style with bootstrap
+- [+] Bundle with parcel like https://github.com/twbs/examples/tree/main/parcel
   Hmm? https://hiltonmeyer.com/articles/11ty-with-parcel.html
-- [ ] Publish via github pages with https://github.com/actions/deploy-pages
-- [ ] proxy with cloudflare
-- [ ] Edit on github
+- [+] fix(home): make home only have "What we do" and "how we do it" and link those to two detailed feature pages
+- [ ] chore: Publish via github pages with https://github.com/actions/deploy-pages
+- [ ] fix(home): add working contact form
+- [ ] fix: add comments to pages
+- [ ] chore: proxy with cloudflare
+- [ ] fix: add a "See something wrong?, [propose an edit]"
 - [ ] "Selected Articles" based on blog from eleventy-base-blog
 - [ ] SEO og/twitter semantic tags like twenty-nine
 - [ ] analytics from https://www.cloudflare.com/web-analytics/, https://plausible.io/ or https://matomo.org/
+- [ ] fix: update primary/secondary, etc. colors https://getbootstrap.com/docs/5.2/customize/color/
 - [ ] check everything with lighthouse https://web.dev/measure
 - [ ] privacy policy
 - [ ] terms
 - [ ] cookie warning
+- [ ] fix: optimize parcel bundling of css based on what's used in generated output
 
 ## Inspiration and Gratitude
 

@@ -1,0 +1,64 @@
+---
+title: Who We Are - Product Management and Software Development Consulting by Scott Willeke
+layout: default
+links:
+  - url: https://www.linkedin.com/in/scottwilleke/
+    title: LinkedIn
+    icon: /images/linkedin.svg#root
+  - url: https://github.com/activescott/
+    title: GitHub
+    icon: /images/github.svg#root
+  - url: https://stackoverflow.com/users/51061/scott-willeke
+    title: StackOverflow
+    icon: /images/stack-overflow.svg#root
+---
+
+export const ListLinks = ({ links }) => {
+  return (
+    <ul className="ps-0" style={{ listStyleType: "none" }}>
+      {links.map((link) => (
+        <li className="d-flex align-items-start mb-1" key={link.title}>
+          <a href={link.url} target="_blank" className="text-decoration-none">
+            <svg
+              viewBox="0 0 16 16"
+              width="16"
+              height="16"
+              className="ms-3 me-1"
+            >
+              <use href={link.icon}></use>
+            </svg>
+            {link.title}
+          </a>
+        </li>
+      ))}
+    </ul>
+  )
+}
+
+# Scott Willeke, Principal Consultant
+
+<img
+  src="/images/scott-onphone-small.jpg"
+  className="img-thumbnail rounded float-end"
+  alt="Scott Willeke Photo"
+  width={200}
+/> Scott has 25 years of experience in software craftsmanship. He started his career
+as a high-performing individual contributor in Software Development and Product Management
+roles. As a natural leader, he gravitated towards formal leadership roles in Engineering
+and Product Management. He served four years leading Product Managers as a Senior
+Director of Product Management at Smartsheet. He also led Engineering as a Senior
+Director of Engineering at Smartsheet, and eventually a GM of both Product Management
+and Software Engineering for the core Platform and Enterprise capabilties. Scott
+thrives in deeply technical projects, with a natural ability to transition from complex
+design and coding tasks at a Principle Engineer level to VP-level product strategy
+conversations with the executive team.
+
+Scott's leadership skills include coaching teams and managers to become independent leaders of leaders, agile and lean processes, customer interviewing, user testing, go-to-market planning and execution, roadmap creation, product definition and writing, verbal communication and presentation skill development.
+
+Scott's software engineering and design skills include JavaScript/TypeScript, Node.js, Docker, Kubernetes, React, C# & .NET, microservices, AWS, DevOps, setting up operational maturity including on-call rotations, telemetry and alerting, automated testing and deployments, CI/CD, and more.
+
+Outside of work Scott spends time with his young kids, hiking in the woods, and mountaineering including summits of [Mount Rainier](https://peakbagger.com/climber/Ascent.aspx?aid=1854749) and [Mount Baker](https://peakbagger.com/climber/ascent.aspx?aid=2027709) in Washington.
+
+You can learn more about Scott from some of his online profiles below:
+
+<ListLinks {...props} />

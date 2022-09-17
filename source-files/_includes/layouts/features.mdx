@@ -1,0 +1,54 @@
+---
+title: Ping Poet Products - Cloud Product Management and Software Development Consulting
+mdxFragment: true
+---
+
+import HtmlHead from "./htmlHead.jsx"
+import SiteHeader from "./siteHeader.jsx"
+import SiteFooter from "./siteFooter.jsx"
+import Card from "../../components/card.jsx"
+
+export const Features = ({ features }) => {
+  /* we showcase the first featuer, and just loop through the rest as cards */
+  const showcased =
+    features && features.length > 0
+      ? features[0]
+      : { title: "", description: "" }
+  const others =
+    features && features.length > 0 ? features.slice(1) : []
+  return (<>
+    <h1>{showcased.title}</h1>
+        <p className="fs-5 col-md-8 mb-5">{showcased.description}</p>
+
+        <hr className="col-3 col-md-2 mb-5" />
+    <div className="row g-5">
+      {others.map((feature) => (
+        <Card heading={feature.title} key={feature.title}>{feature.description}</Card>
+      ))}
+    </div>
+
+  </>)
+}
+
+<html lang="en">
+  
+  <HtmlHead {...props} />
+
+  <body>
+    <div className="col-lg-8 mx-auto p-4 py-md-5">
+
+      <SiteHeader />
+
+      <main>
+
+        <Features features={props.features}/>
+
+      </main>
+
+      <SiteFooter />
+
+    </div>
+
+  </body>
+
+</html>

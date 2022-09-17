@@ -1,0 +1,24 @@
+---
+title: Ping Poet Products - Cloud Product Management and Software Development Consulting
+mdxFragment: true
+---
+
+import HtmlHead from "./htmlHead.jsx"
+import SiteHeader from "./siteHeader.jsx"
+import SiteFooter from "./siteFooter.jsx"
+
+<html lang="en">
+  <HtmlHead {...props} />
+  <body>
+    <div className="col-lg-8 mx-auto p-4 py-md-5">
+
+      <SiteHeader />
+
+      <main dangerouslySetInnerHTML={{ __html: props.content }} />
+
+      <SiteFooter />
+
+    </div>
+
+  </body>
+</html>
