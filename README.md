@@ -17,7 +17,7 @@ This is the source for the https://www.pingpoet.com website for Ping Poet Produc
 - [ ] SEO og/twitter semantic tags like twenty-nine
 - [ ] "Selected Articles" based on blog from eleventy-base-blog
 - [ ] analytics from https://www.cloudflare.com/web-analytics/, https://plausible.io/ or https://matomo.org/
-- [ ] fix: update primary/secondary, etc. colors https://getbootstrap.com/docs/5.2/customize/color/
+- [x] fix: update primary/secondary, etc. colors https://getbootstrap.com/docs/5.2/customize/color/
 - [ ] check everything with lighthouse https://web.dev/measure
 - [ ] privacy policy
 - [ ] terms
