@@ -1,5 +1,5 @@
 # workflow for building and deploying a eleventy site to GitHub Pages
-name: Deploy eleventy with GitHub Pages dependencies preinstalled
+name: Deploy eleventy to GitHub Pages
 
 on:
   # Runs on pushes targeting the default branch
@@ -33,6 +33,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
+          cache: 'npm'
+          cache-dependency-path: package-lock.json
+      - name: Install npm dependencies
+        run: npm ci
       - name: Build Eleventy
         run: npm run build
       - name: Upload artifact
