@@ -12,8 +12,7 @@ This is the source for the https://www.pingpoet.com website for Ping Poet Produc
 - [x] fix: render markdown on features layout page (how-we-do-it has an example of failed render)
 - [x] fix: add a "See something wrong?, [propose an edit]"
 - [x] fix: add contact form
-- [ ] privacy policy
-- [ ] terms
+- [x] fix: add privacy policy & terms
 - [ ] cookie warning
 - [ ] chore: proxy with cloudflare for perf
 - [ ] SEO og/twitter semantic tags like twenty-nine
