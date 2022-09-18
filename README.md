@@ -11,17 +11,17 @@ This is the source for the https://www.pingpoet.com website for Ping Poet Produc
 - [x] chore: Publish via github pages with https://github.com/actions/deploy-pages
 - [x] fix: render markdown on features layout page (how-we-do-it has an example of failed render)
 - [x] fix: add a "See something wrong?, [propose an edit]"
-- [ ] fix: add working contact form
-- [ ] fix: add comments to pages
-- [ ] chore: proxy with cloudflare for perf
-- [ ] SEO og/twitter semantic tags like twenty-nine
-- [ ] "Selected Articles" based on blog from eleventy-base-blog
-- [ ] analytics from https://www.cloudflare.com/web-analytics/, https://plausible.io/ or https://matomo.org/
-- [x] fix: update primary/secondary, etc. colors https://getbootstrap.com/docs/5.2/customize/color/
-- [ ] check everything with lighthouse https://web.dev/measure
+- [x] fix: add contact form
 - [ ] privacy policy
 - [ ] terms
 - [ ] cookie warning
+- [ ] chore: proxy with cloudflare for perf
+- [ ] SEO og/twitter semantic tags like twenty-nine
+- [ ] fix: Add "Selected Articles" and blog templte based on blog from eleventy-base-blog
+- [ ] fix: add comments to blog page template
+- [ ] analytics from https://www.cloudflare.com/web-analytics/, https://plausible.io/ or https://matomo.org/
+- [x] fix: update primary/secondary, etc. colors https://getbootstrap.com/docs/5.2/customize/color/
+- [ ] check everything with lighthouse https://web.dev/measure
 - [ ] fix: optimize parcel bundling of css based on what's used in generated output
 - [ ] chore: prevent npm start from leaving some processes running due to run-p
 
