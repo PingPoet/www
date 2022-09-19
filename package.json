@@ -12,7 +12,9 @@
     "watch:css": "parcel watch --no-hmr --dist-dir _site/style source-files/style/style.scss",
     "watch:js": "parcel watch --no-hmr --dist-dir _site/js source-files/js/main.js",
     "watch:images": "parcel watch --no-hmr --dist-dir _site/images source-files/images/**/*",
-    "watch:11ty": "npx @11ty/eleventy --serve"
+    "watch:11ty": "npx @11ty/eleventy --watch",
+    "//watch:serve":"We use serve instead of 11ty because it's more prod-like and specifically it serves .js files which 11ty dev server doesn't.",
+    "watch:serve": "npx serve _site"
   },
   "license": "ISC",
   "browserslist": "> 0.5%, last 2 versions, not dead",
@@ -25,7 +27,8 @@
     "process": "^0.11.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-remark": "^2.1.0"
+    "react-remark": "^2.1.0",
+    "serve": "^14.0.1"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.6",

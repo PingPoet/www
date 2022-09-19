@@ -3,7 +3,7 @@ import React from "react"
 const SiteFooter = ({ page }) => (
   <footer className="pt-5 my-5 text-muted border-top">
     <ul className="nav justify-content-evenly">
-      <li className="nav-item">
+      <li className="navbar-text">
         Ping Poet Products, LLC. &middot; &copy; 2022
       </li>
       <li className="nav-item">
