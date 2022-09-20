@@ -1,0 +1,6 @@
+# a base url to use for rooting any relative links
+baseUrl: https://www.pingpoet.com
+# a default page title used when one is not set on the page front matter
+defaultTitle: Ping Poet Products - Product Management and Software Development Consulting
+# a default page description used when one is not set on the page front matter
+defaultDescription: Ping Poet Products provides Product Management and Software Development consulting to take cloud-based products from idea to customers

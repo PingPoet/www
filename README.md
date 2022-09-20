@@ -13,8 +13,10 @@ This is the source for the https://www.pingpoet.com website for Ping Poet Produc
 - [x] fix: add contact form
 - [x] fix: add privacy policy & terms
 - [x] fix: cookie warning: n/a; at least for now no cookies used, so no warning needed per https://gdpr.eu/cookies
-- [ ] fix: SEO og/twitter semantic tags like twenty-nine
-- [ ] fix: Add "Selected Articles" and blog templte based on blog from eleventy-base-blog
+- [x] fix: SEO og/twitter semantic tags (twenty-nine has good example)
+  - https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards
+  - https://ogp.me/
+- [ ] fix: Add "Selected Articles" and blog template based on blog from eleventy-base-blog
 - [ ] fix: add comments to blog page template
 - [ ] fix: analytics from https://www.cloudflare.com/web-analytics/, https://plausible.io/ or https://matomo.org/
 - [x] fix: update primary/secondary, etc. colors https://getbootstrap.com/docs/5.2/customize/color/

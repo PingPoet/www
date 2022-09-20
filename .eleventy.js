@@ -1,9 +1,11 @@
 const mdxPlugin = require("@jamshop/eleventy-plugin-mdx")
+const yaml = require("js-yaml")
 
 module.exports = function (eleventyConfig) {
   // Support .mdx (https://mdxjs.com/docs/getting-started/#syntax) with https://github.com/jamshop/eleventy-plugin-mdx
   eleventyConfig.addPlugin(mdxPlugin)
-
+  // support yaml data files in _data:
+  eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents))
   return {
     dir: {
       // https://www.11ty.dev/docs/config/#input-directory
