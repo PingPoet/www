@@ -16,6 +16,7 @@ This is the source for the https://www.pingpoet.com website for Ping Poet Produc
 - [x] fix: SEO og/twitter semantic tags (twenty-nine has good example)
   - https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards
   - https://ogp.me/
+- [ ] chore: verify seo with https://opengraph.dev/
 - [ ] fix: Add "Selected Articles" and blog template based on blog from eleventy-base-blog
 - [ ] fix: add comments to blog page template
 - [ ] fix: analytics from https://www.cloudflare.com/web-analytics/, https://plausible.io/ or https://matomo.org/

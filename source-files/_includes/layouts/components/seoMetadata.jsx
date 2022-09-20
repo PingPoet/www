@@ -18,12 +18,41 @@ const SeoMetadata = ({ title, description, image, page, site }) => {
   return (
     <>
       <meta property="og:type" content="website" />
-      <meta property="og:title" content={title || site.defaultTitle} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <TitleTags {...{ title, site }} />
       <DescriptionTags {...{ description, site }} />
-      {ogUrl}
+      <UrlTags {...{ page, site }} />
       <ImageTags {...{ image, site }} />
     </>
   )
+}
+
+const UrlTags = ({ page, site }) => {
+  if (page && page.url) {
+    return (
+      <>
+        <meta property="og:url" content={site.baseUrl + page.url} />
+        <meta property="twitter:url" content={site.baseUrl + page.url} />
+      </>
+    )
+  } else {
+    return <></>
+  }
+}
+
+const TitleTags = ({ title, site }) => {
+  title = title || (site ? site.defaultTitle : "")
+
+  if (title) {
+    return (
+      <>
+        <meta property="og:title" content={title || site.defaultTitle} />
+        <meta property="twitter:title" content={title || site.defaultTitle} />
+      </>
+    )
+  } else {
+    return <></>
+  }
 }
 
 const DescriptionTags = ({ description, site }) => {
@@ -35,11 +64,15 @@ const DescriptionTags = ({ description, site }) => {
     return (
       <>
         <meta
+          property="description"
+          content={description || site.defaultDescription}
+        />
+        <meta
           property="og:description"
           content={description || site.defaultDescription}
         />
         <meta
-          property="description"
+          property="twitter:description"
           content={description || site.defaultDescription}
         />
       </>
@@ -69,7 +102,12 @@ const ImageTags = ({ image, site }) => {
     image = site.baseUrl + "/images/pingpoet-seo-banner.png"
   }
 
-  return <meta property="og:image" content={image} />
+  return (
+    <>
+      <meta property="og:image" content={image} />
+      <meta property="twitter:image" content={image} />
+    </>
+  )
 }
 
 export default SeoMetadata
