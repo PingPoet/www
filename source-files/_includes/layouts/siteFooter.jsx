@@ -1,7 +1,7 @@
 import React from "react"
 
 const SiteFooter = ({ page }) => (
-  <footer className="pt-5 my-5 text-muted border-top">
+  <footer className="pt-5 my-5 text-muted border-top fw-lighter">
     <ul className="nav justify-content-evenly">
       <li className="navbar-text">
         Ping Poet Products, LLC. &middot; &copy; 2022
@@ -12,7 +12,12 @@ const SiteFooter = ({ page }) => (
           target="_blank"
           className="nav-link text-muted"
         >
-          See something wrong? Suggest an edit!
+          See something wrong? Edit it!
+        </a>
+      </li>
+      <li className="nav-item">
+        <a className="nav-link text-muted" href="/contact">
+          Contact Us
         </a>
       </li>
       <li className="nav-item">
