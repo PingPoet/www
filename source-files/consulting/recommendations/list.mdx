@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<pre>
+  <RecoList {...props} />
+</pre>
+
+export const RecoList = (props) => {
+  return (
+    <ul className="icon-list">
+      {
+        props.collections.all
+          .filter((page) => page.url.startsWith('/consulting/recommendations/') && (!page.url.startsWith('/consulting/recommendations/list')))
+          .map((page) => <li><a href={page.url}>{page.data.title}</a></li>)
+      }
+    </ul>
+  )
+}

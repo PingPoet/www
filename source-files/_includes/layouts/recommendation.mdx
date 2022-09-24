@@ -1,0 +1,46 @@
+---
+mdxFragment: true
+---
+
+import HtmlHead from "./htmlHead.jsx"
+import SiteHeader from "./siteHeader.jsx"
+import SiteFooter from "./siteFooter.jsx"
+
+<html lang="en">
+  <HtmlHead {...props} />
+  <body>
+    <div className="col-lg-8 mx-auto p-4 py-md-5">
+
+      <SiteHeader {...props} />
+
+      <main>
+        <h1>Recommendation from {props.recommender.fullName} of {props.recommender.organization}</h1>
+        <p>{props.recommender.firstName} worked with {props.recommended.firstName} when he was {props.recommended.title} at {props.recommended.organization}. {props.recommender.firstName} had to say about working with him:</p>
+        <figure>
+          <blockquote className="blockquote fst-italic" dangerouslySetInnerHTML={{ __html: props.content }}></blockquote>
+
+          <figcaption className="blockquote-footer mt-3">
+            <SocialLink
+              url={props.recommender.linkedInUrl}
+              icon="/images/linkedin.svg#root"
+              title={`${props.recommender.fullName}, ${props.recommender.title}, ${props.recommender.organization}`}
+            />
+          </figcaption>
+        </figure>
+      </main>
+
+      <SiteFooter {...props} />
+
+    </div>
+
+  </body>
+</html>
+
+export const SocialLink = ({ url, icon, title }) => (
+  <a href={url} target="_blank" className="text-decoration-none">
+    <svg viewBox="0 0 16 16" width="16" height="16" className="ms-2 me-1">
+      <use href={icon}></use>
+    </svg>
+    {title}
+  </a>
+)
