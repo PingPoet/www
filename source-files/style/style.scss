@@ -18,7 +18,7 @@ $secondary: $color_scheme_secondary;
 
 /* this is a reusable way to put a nice mark before a unordered list */
 .icon-list li::before {
-  display: inline-block;
+  display: block;
   flex-shrink: 0;
   width: 1.5em;
   height: 1.5em;
@@ -27,8 +27,4 @@ $secondary: $color_scheme_secondary;
   // for the colored svg see https://stackoverflow.com/a/46904983/51061
   background-color: $primary;
   mask: url("../images/arrow-right-circle-fill.svg") no-repeat 50% 50%;
-}
-
-.icon-list li::marker {
-  content: ""
 }

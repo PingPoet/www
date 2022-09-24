@@ -12,8 +12,9 @@ export const RecoList = (props) => {
       {
         props.collections.all
           .filter((page) => page.url.startsWith('/consulting/recommendations/') && (!page.url.startsWith('/consulting/recommendations/list')))
-          .map((page) => <li><a href={page.url}>{page.data.title}</a></li>)
+          .map((page) => <li className="d-flex mb-1"><a href={page.url}>{page.data.title}</a></li>)
       }
     </ul>
   )
 }
+
