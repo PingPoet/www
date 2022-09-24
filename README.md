@@ -17,6 +17,7 @@ This is the source for the https://www.pingpoet.com website for Ping Poet Produc
   - https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards
   - https://ogp.me/
 - [ ] chore: verify seo with https://opengraph.dev/
+- [ ] fix: ensure consistent default font.  https://github.com/rsms/inter/ ? See ff use at https://mozilla.design/firefox/typography/
 - [ ] fix: Add "Selected Articles" and blog template based on blog from eleventy-base-blog
 - [ ] fix: add comments to blog page template
 - [ ] fix: analytics from https://www.cloudflare.com/web-analytics/, https://plausible.io/ or https://matomo.org/
@@ -35,6 +36,8 @@ This is the source for the https://www.pingpoet.com website for Ping Poet Produc
   - https://www.filamentgroup.com/portfolio/
   - https://updivision.com/
   - https://www.tatianamac.com/
+  - https://www.luxoft.com/services/cloud-solutions/
+  - https://bluehawkconsulting.com/services/#technology_enablement
 - Technology & Tools:
   - https://www.11ty.dev
     - https://github.com/11ty/eleventy-base-blog for structure, metadata, and layouts.
