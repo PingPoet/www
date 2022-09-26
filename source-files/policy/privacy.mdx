@@ -6,7 +6,7 @@ date: git Last Modified # see https://www.11ty.dev/docs/dates/
 
 # Privacy & Cookies Policy
 
-Effective date: { props.page.date }
+Effective date: { new Date(props.page.date).toLocaleDateString("en-US", { year: 'numeric', month: 'long', day: 'numeric' }) }
 
 Ping Poet Products, LLC ("us", "we", or "our") operates the https://www.pingpoet.com website (hereinafter referred to as the "Service").
 
@@ -198,7 +198,7 @@ Their Privacy Policy can be viewed at https://www.paypal.com/webapps/mpp/ua/priv
 */}
 
 
-<table class="table">
+<table className="table">
   <thead>
     <tr>
       <th>Third Party Service/ Vendor</th>
