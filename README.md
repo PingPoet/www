@@ -20,7 +20,7 @@ This is the source for the https://www.pingpoet.com website for Ping Poet Produc
 - [ ] fix: ensure consistent default font.  https://github.com/rsms/inter/ ? See ff use at https://mozilla.design/firefox/typography/
 - [ ] fix: Add "Selected Articles" and blog template based on blog from eleventy-base-blog
 - [ ] fix: add comments to blog page template
-- [ ] fix: analytics from https://www.cloudflare.com/web-analytics/, https://plausible.io/ or https://matomo.org/
+- [x] fix: analytics from https://www.cloudflare.com/web-analytics/, https://plausible.io/ or https://matomo.org/
 - [x] fix: update primary/secondary, etc. colors https://getbootstrap.com/docs/5.2/customize/color/
 - [ ] chore: check everything with lighthouse https://web.dev/measure
   - [ ] chore: proxy with cloudflare for perf; why? ghp isn't slow is it? wait on lighthouse analysis
