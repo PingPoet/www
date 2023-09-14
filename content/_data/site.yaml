@@ -4,3 +4,5 @@ baseUrl: https://www.pingpoet.com
 defaultTitle: Ping Poet Products - Product Management and Software Development Consulting
 # a default page description used when one is not set on the page front matter
 defaultDescription: Ping Poet Products provides Product Management and Software Development consulting to take cloud-based products from idea to customers
+# for cloudflare insights:
+cloudflare_insights_token: "6b0361fcbfc8470e9ee5423861c12925"
