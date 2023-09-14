@@ -1,7 +1,7 @@
 import React from "react"
-import { AnalyticsEmbed }  from "./components/analytics.jsx"
+import { AnalyticsEmbed } from "./components/analytics.jsx"
 
-const SiteFooter = ({ page }) => (
+const SiteFooter = ({ page, site }) => (
   <footer className="pt-5 my-5 text-muted border-top fw-lighter">
     <ul className="nav justify-content-evenly">
       <li className="navbar-text">
@@ -32,7 +32,7 @@ const SiteFooter = ({ page }) => (
         </a>
       </li>
     </ul>
-    <AnalyticsEmbed />
+    <AnalyticsEmbed site={site} />
   </footer>
 )
 export default SiteFooter

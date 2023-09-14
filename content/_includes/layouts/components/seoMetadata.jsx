@@ -10,11 +10,6 @@ References:
 
 //TODO: also support override page properties like seo.og.title https://github.com/seancdavis/twenty-ninety#seo
 const SeoMetadata = ({ title, description, image, page, site }) => {
-  let ogUrl = null
-  if (page && page.url) {
-    ogUrl = <meta property="og:url" content={site.baseUrl + page.url} />
-  }
-
   return (
     <>
       <meta property="og:type" content="website" />
