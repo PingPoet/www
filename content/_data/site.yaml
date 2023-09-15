@@ -6,3 +6,5 @@ defaultTitle: Ping Poet Products - Product Management and Software Development C
 defaultDescription: Ping Poet Products provides Product Management and Software Development consulting to take cloud-based products from idea to customers
 # for cloudflare insights:
 cloudflare_insights_token: "6b0361fcbfc8470e9ee5423861c12925"
+# start year of the site for copyright in footer
+start_year: 2022

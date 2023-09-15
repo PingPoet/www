@@ -5,7 +5,10 @@ const SiteFooter = ({ page, site }) => (
   <footer className="pt-5 my-5 text-muted border-top fw-lighter">
     <ul className="nav justify-content-evenly">
       <li className="navbar-text">
-        Ping Poet Products, LLC. &middot; &copy; 2022
+        Ping Poet Products, LLC. &middot; &copy;{" "}
+        {site.start_year && new Date().getFullYear() != site.start_year
+          ? `${site.start_year} - ${new Date().getFullYear()}`
+          : new Date().getFullYear().toString()}
       </li>
       <li className="nav-item">
         <a
