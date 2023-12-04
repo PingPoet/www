@@ -14,8 +14,6 @@ export const Features = ({ features }) => {
     features && features.length > 0
       ? features[0]
       : { title: "", description: "" }
-  const showcasedTitle = useRemarkSync(showcased.title)
-  const showcasedDescription = useRemarkSync(showcased.description)
   const others =
     features && features.length > 0 ? features.slice(1) : []
   return (<>
